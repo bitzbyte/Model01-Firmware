@@ -336,6 +336,10 @@ void hostPowerManagementEventHandler(kaleidoscope::HostPowerManagement::Event ev
   */
 
 void setup() {
+  // Start in Boot Protocol mode, e.g. for BIOS usage
+  // GitHub issue: https://github.com/keyboardio/Kaleidoscope/issues/220
+  BootKeyboard.setProtocol(HID_BOOT_PROTOCOL);
+
   // First, call Kaleidoscope's internal setup function
   Kaleidoscope.setup();
 
