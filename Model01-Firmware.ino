@@ -181,10 +181,10 @@ KEYMAPS(
    Key_LeftGui,           Key_Backspace, Key_LeftControl, Key_LeftShift,
    ShiftToLayer(FUNCTION),
 
-   M(MACRO_MAC_LOCKSCREEN),     Key_6, Key_7, Key_8,     Key_9,       Key_0,         LockLayer(NUMPAD),
+   LGUI(LALT(Key_Power)),       Key_6, Key_7, Key_8,     Key_9,       Key_0,         LockLayer(NUMPAD),
    Key_Enter,                   Key_Y, Key_U, Key_I,     Key_O,       Key_P,         Key_LeftBracket,
                                 Key_H, Key_J, Key_K,     Key_L,       Key_Semicolon, Key_Quote,
-   M(MACRO_OMNIFOCUS_QUICKADD), Key_N, Key_M, Key_Comma, Key_Period,  Key_Slash,     Key_RightBracket,
+   LGUI(LSHIFT(Key_Spacebar)),  Key_N, Key_M, Key_Comma, Key_Period,  Key_Slash,     Key_RightBracket,
    Key_RightShift, Key_LeftAlt, Key_Spacebar, Key_RightGui,
    ShiftToLayer(FUNCTION)),
 
