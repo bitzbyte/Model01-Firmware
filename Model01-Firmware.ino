@@ -86,9 +86,7 @@
   */
 
 enum { MACRO_VERSION_INFO,
-       MACRO_ANY,
-       MACRO_OMNIFOCUS_QUICKADD,
-       MACRO_MAC_LOCKSCREEN
+       MACRO_ANY
      };
 
 
@@ -383,14 +381,6 @@ const macro_t *macroAction(uint8_t macroIndex, uint8_t keyState) {
 
   case MACRO_ANY:
     anyKeyMacro(keyState);
-    break;
-  
-  case MACRO_OMNIFOCUS_QUICKADD:
-    return MACRODOWN(D(LeftGui), D(LeftShift), D(Spacebar), U(LeftGui), U(LeftShift), U(Spacebar));
-    break;
-
-  case MACRO_MAC_LOCKSCREEN:
-    return MACRODOWN(D(LeftGui), D(LeftAlt), D(Power), U(LeftGui), U(LeftAlt), U(Power));
     break;
   }
 
